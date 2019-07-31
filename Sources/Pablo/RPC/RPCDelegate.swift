@@ -2,14 +2,14 @@ import Foundation
 
 protocol RPCDelegate {
 
-    /// Tells the client that a new `Epoch` was received.
+    /// Tells the delegate that a new `Epoch` was received.
     ///
     /// - Parameters
     ///     - rpc: The RPC client.
     ///     - epoch: The new epoch.
     func rpc(_ rpc: RPC, didReceiveEpoch epoch: Epoch)
 
-    /// Tells the client that a new `Slot` was received.
+    /// Tells the delegate that a new `Slot` was received.
     ///
     /// - Parameters
     ///     - rpc: The RPC client.
